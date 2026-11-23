@@ -11,6 +11,7 @@ Analyze IFC and TRE files to identify Girder Trusses and Carried Trusses with st
 - [Release and deployment specification](docs/hy4/release-deployment-spec.md) — build, Railway deploy, and rollback
 - [Technical specification](docs/hy4/technical-spec.md) — architecture, data flow, and business rules
 - [UI rework specification](docs/hy4/ui-rework-spec.md) — workflows, layout, and acceptance criteria
+- [UI baseline](docs/hy4/ui-baseline.md) — the app as measured before the rework: structure, screenshots, and parser output
 
 ## Tech Stack
 
