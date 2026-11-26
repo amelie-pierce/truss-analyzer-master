@@ -2,7 +2,7 @@
 
 **Status:** Draft for review  
 **Scope:** React UI and interaction state. No changes to structural analysis, hanger selection rules, or export format.  
-**Baseline:** [UI baseline](ui-baseline.md) records the app as measured before this rework, with screenshots and parser output for the fixtures.
+**Baseline:** [UI baseline](../baseline/ui-baseline.md) records the app as measured before this rework, with screenshots and parser output for the fixtures.
 
 ## 1. Purpose
 
@@ -109,7 +109,7 @@ Rule for new UI: a status, badge, or value is rendered only from job data, a req
 | Layout and accessibility | Test at 1440, 1024, and 390 px and at 200% zoom. Complete import, selection, lookup, and export by keyboard with visible focus; no page-wide horizontal overflow. |
 | Labels and values | No label listed in 2.1 appears unless derived from data. Missing CSI, material, or reaction values show **Not available**, not a default. Any value on screen can be selected and copied. |
 | Repeated labels | With `Test3/`, the three `J06C` girders are distinguishable in the list, the header, and the Job Summary. |
-| Regression | Parser output for the sample, `Test3/`, and `Test4/` matches [`fixtures/parser-baseline.json`](fixtures/parser-baseline.json). |
+| Regression | Parser output for the sample, `Test3/`, and `Test4/` matches [`docs/baseline/parser-baseline.json`](../baseline/parser-baseline.json). |
 | Build | `npm run lint` and `npm run build` pass after implementation. `npm run lint` fails at the baseline (4 errors) and is fixed in step 0. |
 
 ## 8. Delivery order

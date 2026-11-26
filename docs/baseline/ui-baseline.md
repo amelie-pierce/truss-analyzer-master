@@ -1,12 +1,12 @@
 # Truss Analyzer — UI baseline
 
 **Status:** Recorded 2026-11-23 at commit `357706a`. This is a snapshot of the app before the UI rework; do not edit it to match later changes.  
-**Companion:** [UI rework specification](ui-rework-spec.md), [Technical specification](technical-spec.md).  
+**Companion:** [UI rework specification](../hy4/ui-rework-spec.md), [Technical specification](../hy4/technical-spec.md).  
 **Method:** read all of `src/`, the seven specs in `docs/hy4/`, ran install, type-check, build and dependency audit, ran the app locally with the bundled sample, and ran the parser on the sample, `Test3/` and `Test4/`.
 
 ## 1. Verdict
 
-The analysis engine is in usable shape and gives stable results on all three fixture sets. The UI is a prototype: three files hold almost all of it, there is no shared visual system, most text is too small to read, nothing is exposed to assistive technology, and several on-screen status labels are hard-coded and not derived from data. The [UI rework specification](ui-rework-spec.md) describes the right fixes; this baseline confirms its claims against the code and adds the numbers to measure the rework against.
+The analysis engine is in usable shape and gives stable results on all three fixture sets. The UI is a prototype: three files hold almost all of it, there is no shared visual system, most text is too small to read, nothing is exposed to assistive technology, and several on-screen status labels are hard-coded and not derived from data. The [UI rework specification](../hy4/ui-rework-spec.md) describes the right fixes; this baseline confirms its claims against the code and adds the numbers to measure the rework against.
 
 ## 2. What the app is
 
@@ -55,7 +55,7 @@ The spec's acceptance check "`npm run lint` and `npm run build` pass" is not tru
 
 ## 5. Parser baseline (for regression during the rework)
 
-Full data: [`fixtures/parser-baseline.json`](fixtures/parser-baseline.json) (girder labels, ordered connections, offsets, spacing, reactions, bearing side, duration factors).
+Full data: [`parser-baseline.json`](parser-baseline.json) (girder labels, ordered connections, offsets, spacing, reactions, bearing side, duration factors).
 
 | Fixture | Girders | Connections | Warnings / errors |
 | --- | --- | --- | --- |
@@ -74,7 +74,7 @@ Screens captured at 1306 × 726 with the bundled sample and no SST token:
 
 | Analyzer | Hanger selector | Job Summary |
 | --- | --- | --- |
-| ![Analyzer](baseline/01-analyzer.png) | ![Hanger selector](baseline/02-hanger-selector.png) | ![Job Summary](baseline/03-job-summary.png) |
+| ![Analyzer](01-analyzer.png) | ![Hanger selector](02-hanger-selector.png) | ![Job Summary](03-job-summary.png) |
 
 ### 6.1 Readability
 
